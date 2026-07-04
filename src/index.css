@@ -1,0 +1,34 @@
+@import "./assets/styles/variables.css";
+@import "./assets/styles/buttons.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--bg-body);
+  color: var(--text-primary);
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #111827;
+  color: white;
+}
+
+input {
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
