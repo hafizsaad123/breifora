@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero/Hero";
 import Features from "./HomeComponent/Features";
 import Slider from "./HomeComponent/slider";
+import Workflow from "./HomeComponent/Workflow";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div style={{ width: '100%', border: '1px solid var(--border-color)' }} className="bar_line"></div>
       <Slider />
       <Features />
+      <Workflow />
       {/* Benefits, How It Works, Pricing, Testimonials, FAQs sections go here */}
     </div>
   );
