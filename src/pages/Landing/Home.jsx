@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero/Hero";
 import Comparison from "./HomeComponent/Comparison";
+import FAQ from "./HomeComponent/FAQ";
 import Features from "./HomeComponent/Features";
 import Pricing from "./HomeComponent/Pricing";
 import Slider from "./HomeComponent/slider";
@@ -15,6 +16,7 @@ export default function Home() {
       <Workflow />
       <Comparison />
       <Pricing />
+      <FAQ />
       {/* Benefits, How It Works, Pricing, Testimonials, FAQs sections go here */}
     </div>
   );
