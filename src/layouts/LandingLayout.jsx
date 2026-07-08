@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../pages/Landing/HomeComponent/Footer";
 // import Footer from "../components/Footer";
 
 // Note: Home renders its own <Navbar /> inside <Hero />, since the navbar
@@ -13,9 +14,7 @@ export default function LandingLayout() {
       </main>
 
       {/* <Footer /> */}
-      <footer style={{ padding: "1rem", borderTop: "1px solid #eee" }}>
-        Landing Footer (placeholder)
-      </footer>
+      <Footer />
     </div>
   );
 }

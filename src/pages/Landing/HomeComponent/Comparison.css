@@ -6,12 +6,12 @@
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
 }
 
-/* Typography Header Matrix */
+/* Typography Header */
 .comparison-header {
   text-align: center;
   padding: 5rem 2rem 3.5rem 2rem;
@@ -34,7 +34,7 @@
 
 /* Structural Table Scoping */
 .table-container {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   overflow-x: auto;
 }
 
@@ -56,9 +56,12 @@
 
 .col-others {
   width: 50%;
+      border-top: 1px solid #dcd9ff;
+    border-left: 1px solid #dcd9ff;
+    border-right: 1px solid #dcd9ff;
 }
 
-.col-breifora {
+.col-briefora {
   width: 50%;
   border-top: 1px solid #dcd9ff;
   border-left: 1px solid #dcd9ff;
@@ -80,7 +83,7 @@
   color: var(--primary);
 }
 
-/* Row & Cell Grid Formatting */
+/* Table Rows & Cells */
 .comparison-table tr {
   border-bottom: 1px solid var(--border-color);
 }
@@ -91,17 +94,20 @@
   font-weight: 400;
   color: var(--text-primary);
   vertical-align: middle;
+  text-align: center;
 }
 
-/* Component Cell Left ("Others") styling */
-.cell-others {
-  text-align: center;
-  color: #55585a;
+/* Inner cell wrapper handles alignment cleanly */
+.cell-content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  border-bottom: none; /* Let standard tr handle horizontal line dividers */
+}
+
+/* Component Cell Left ("Others") styling */
+.cell-others {
+  color: #55585a;
 }
 
 .icon-cross {
@@ -110,24 +116,15 @@
   font-weight: bold;
 }
 
-/* Component Cell Right ("Breifora") featured styling */
-.cell-breifora {
+/* Component Cell Right ("Briefora") featured styling */
+.cell-briefora {
   background-color: #f8f7ff;
   border-left: 1px solid #dcd9ff;
   border-right: 1px solid #dcd9ff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
 }
 
-/* Ensure bottom cell seals up layout rounded corners neatly */
-.comparison-table tbody tr:last-child {
-  border-bottom: 1px solid var(--border-color);
-}
-
-.comparison-table tbody tr:last-child .cell-breifora {
+/* Bottom cell rounded border seal */
+.comparison-table tbody tr:last-child .cell-briefora {
   border-bottom: 1px solid #dcd9ff;
   border-radius: 0 0 var(--radius-md) var(--radius-md);
 }
@@ -143,6 +140,7 @@
   justify-content: center;
   font-size: 0.7rem;
   font-weight: bold;
+  flex-shrink: 0;
 }
 
 /* Responsive view layout adjustments */
